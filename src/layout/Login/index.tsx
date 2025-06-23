@@ -27,8 +27,8 @@ const LogIn = () => {
   const form = useForm<z.infer<typeof schema>>({
     resolver: zodResolver(schema),
     defaultValues: {
-      identifier: '',
-      password: '',
+      identifier: '11510001590',
+      password: 'Password@1997',
     },
   });
 
@@ -44,7 +44,7 @@ const LogIn = () => {
         identifier: data.identifier,
         password: data.password,
       });
-      navigate('/');
+      navigate('/dashboard', { replace: true });
     } catch (error) {
       toast.error(error instanceof Error ? error.message : 'Authentication failed');
     } finally {
