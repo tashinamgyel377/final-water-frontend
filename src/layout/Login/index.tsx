@@ -101,8 +101,8 @@ const LogIn = () => {
 
 
 
-        <p className="text-center text-xs text-sky-700/70 pt-2">
-          Don't have an account? Contact Admin
+        <p className="text-center text-xs text-red-400">
+        "Need help? Get in touch with Admin for assistance."
         </p>
       </div>
     </section>

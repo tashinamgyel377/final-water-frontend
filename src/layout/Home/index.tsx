@@ -47,26 +47,48 @@ export default function HomePage() {
 
           {/* Updated Subheading */}
           <p className="text-lg text-slate-600">
-            Our innovative platform allows you to monitor, analyze, and optimize your water systems with ease.
+            Our innovative platform allows you to monitor, analyze, and optimize your water systems with ease. 
+            Whether you're managing water tanks, analyzing usage trends, or monitoring system health, we've got you covered.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-            <div className="p-6 bg-white rounded-xl shadow hover:shadow-xl transition border-t-4 border-blue-500">
-              <Gauge className="h-8 w-8 text-blue-500 mb-2" />
-              <h2 className="font-semibold text-lg">Monitor Water Tanks</h2>
-              <p className="text-sm text-slate-500">Real-time tracking of water levels and tank performance.</p>
-            </div>
+          {/* Features Section */}
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-slate-800 mb-8">Our Key Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="p-6 bg-white rounded-xl shadow hover:shadow-xl transition border-t-4 border-blue-500">
+                <Gauge className="h-8 w-8 text-blue-500 mb-2" />
+                <h3 className="font-semibold text-lg">Monitor Water Tanks</h3>
+                <p className="text-sm text-slate-500">Real-time tracking of water levels and tank performance.</p>
+              </div>
 
-            <div className="p-6 bg-white rounded-xl shadow hover:shadow-xl transition border-t-4 border-emerald-500">
-              <TrendingUp className="h-8 w-8 text-emerald-500 mb-2" />
-              <h2 className="font-semibold text-lg">Gain Insights & Analytics</h2>
-              <p className="text-sm text-slate-500">Visualize trends and optimize water usage across systems.</p>
-            </div>
+              <div className="p-6 bg-white rounded-xl shadow hover:shadow-xl transition border-t-4 border-emerald-500">
+                <TrendingUp className="h-8 w-8 text-emerald-500 mb-2" />
+                <h3 className="font-semibold text-lg">Gain Insights & Analytics</h3>
+                <p className="text-sm text-slate-500">Visualize trends and optimize water usage across systems.</p>
+              </div>
 
-            <div className="p-6 bg-white rounded-xl shadow hover:shadow-xl transition border-t-4 border-amber-500">
-              <AlertTriangle className="h-8 w-8 text-amber-500 mb-2" />
-              <h2 className="font-semibold text-lg">Instant Alerts & Notifications</h2>
-              <p className="text-sm text-slate-500">Receive immediate alerts for leaks or system irregularities.</p>
+              <div className="p-6 bg-white rounded-xl shadow hover:shadow-xl transition border-t-4 border-amber-500">
+                <AlertTriangle className="h-8 w-8 text-amber-500 mb-2" />
+                <h3 className="font-semibold text-lg">Instant Alerts & Notifications</h3>
+                <p className="text-sm text-slate-500">Receive immediate alerts for leaks or system irregularities.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Testimonials Section */}
+          <div className="mt-16 bg-slate-100 py-10">
+            <h2 className="text-3xl font-bold text-slate-800 mb-8">What Our Users Say</h2>
+            <div className="flex flex-wrap justify-center gap-10">
+              <div className="max-w-xs text-center bg-white p-6 rounded-xl shadow-lg">
+                <p className="text-sm text-slate-600 italic">"This system has drastically improved the way we manage water. The real-time data has been invaluable!"</p>
+                <h4 className="mt-4 text-lg font-semibold text-slate-800">John D.</h4>
+                <p className="text-sm text-slate-500">Water System Manager</p>
+              </div>
+              <div className="max-w-xs text-center bg-white p-6 rounded-xl shadow-lg">
+                <p className="text-sm text-slate-600 italic">"I can now easily track usage and receive notifications instantly. It’s made our operations so much smoother."</p>
+                <h4 className="mt-4 text-lg font-semibold text-slate-800">Jane R.</h4>
+                <p className="text-sm text-slate-500">Operations Director</p>
+              </div>
             </div>
           </div>
 
